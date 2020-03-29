@@ -2,10 +2,10 @@
 <h1>Home</h1>
 <p><%=homeContent%></p>
 <%postArray.forEach(function(postElement){%>
-<h1><%=postElement.title%> </h1>
+<h2><%=postElement.title%> </h2>
 <p>
   <%=postElement.content.substr(0,100)+"......."%>
-  <a href="/posts/<%=postElement.title%>">Read more</a>
+  <a href="/posts/<%=postElement._id%>">Read more</a>
 </p>
 <%})%>
 <%- include('partials/footer'); -%>
